@@ -1,0 +1,10 @@
+<html>
+    <title>Users</title>
+    <body>
+        <h4>Users</h4>
+        {% for user in users %}
+        <p>{{ user.username }}</p>
+        <p>{{ user.avatar }}</p>
+        {% endfor %}
+    </body>
+</html>
