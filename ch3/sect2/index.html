@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %} Index {% endblock %}
+
+<h1>{{ self.title() }}</h1>
+
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: black; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Index</h1>
+    <p class="important">
+        Welcome on my awesome homepage.
+    </p>
+{% endblock content %}
+

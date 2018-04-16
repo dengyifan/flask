@@ -1,0 +1,11 @@
+{% macro hello(name) %}
+    Hello {{ name }}
+{% endmarco %}
+
+
+{% macro strftime(time, fmt='%Y-%m-%d %H:%M:%S') %}
+    {{ time.strftime(fmt) }}
+{% endmacro%}
+
+
+
