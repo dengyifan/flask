@@ -1,0 +1,12 @@
+[2018-04-17 09:24:36,248] {logger_show_query.py:33} WARNING - Context:logger_show_query.py:49 (users)
+SLOW QUERY: INSERT INTO users (name) VALUES (%s)
+Parameters: ('hanshan',)
+Duration: 0.000432014465332
+
+[2018-04-17 09:24:36,248] {logger_show_query.py:33} WARNING - Context:logger_show_query.py:51 (users)
+SLOW QUERY: SELECT users.id AS users_id, users.name AS users_name 
+FROM users 
+WHERE users.id = %s
+Parameters: (1L,)
+Duration: 0.000338077545166
+
