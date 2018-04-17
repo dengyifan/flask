@@ -1,0 +1,33 @@
+<%!
+    from datetime import datetime
+    from itertools import repeat
+%>
+
+<%inherit file="base.html"/>
+<%namespace name="utils" file="/utils.html"/>
+
+<%
+    rows = repeat(range(10),10)
+%>
+
+<%include file="/nav.html" />
+
+
+<%def name="main()">
+    ## this is a comment
+    <h2>${utils.strftime(datetime.now())}</h2>
+
+    <table>
+        % for row in rows:
+            ${makerow(row)}
+        % endfor
+    </table>
+</%def>
+
+<%def name="makerow(row)">
+    <tr>
+        % for name in row:
+            <td>${name}</td>
+        % endfor
+    </tr>
+</%def>
