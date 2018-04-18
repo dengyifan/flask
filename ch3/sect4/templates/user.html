@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+    <body>
+        <div>
+            {% for user in users %}
+                <p>{{ user['id'] }} - {{ user.name }}</p>
+            {% endfor %}
+        </div>
+    </body>
+</html>
